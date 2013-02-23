@@ -28,10 +28,10 @@
 }
 
 - (void) runTest {
-    message(@"Testbed version %@", kTestbedVersion);
+    trace(@"Testbed version %@", kTestbedVersion);
     
     for (id o in @[@"klaatu", @"baradu", @"nikto"]) {
-        message(@"object is %@", o);
+        trace(@"object is %@", o);
     }
 }
 

@@ -10,7 +10,7 @@
 
 
 // for testing -- send a message (with c-ish va_args format) to a text view
-void message ( NSString *format, ... ) {
+void trace ( NSString *format, ... ) {
     if (!kMessageActive) return;
     va_list args;
     va_start(args, format);

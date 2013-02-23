@@ -18,7 +18,21 @@
 {
     [super viewDidLoad];
     
+    extern UITextView *messageTextView;
+    messageTextView = textView;
     
+    textView.font = [ UIFont systemFontOfSize:12];
+    
+    [self runTest];
+    
+}
+
+- (void) runTest {
+    message(@"Testbed version %@", kTestbedVersion);
+    
+    for (id o in @[@"klaatu", @"baradu", @"nikto"]) {
+        message(@"object is %@", o);
+    }
 }
 
 - (void)didReceiveMemoryWarning

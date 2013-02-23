@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iEPUtilities.h"
+
+static NSString *const kTestbedVersion = @"1.0";
 
 @interface iEPViewController : UIViewController
 {
